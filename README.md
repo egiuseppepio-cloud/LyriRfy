@@ -39,7 +39,7 @@ Results are cached in `config/lyrirfy-cache/lyrics`, so replaying a song works o
 | Component | Version |
 | --- | --- |
 | Minecraft | 26.1 |
-| Fabric Loader | 0.18.4 or newer |
+| Fabric Loader | 0.20.1 or newer |
 | Fabric API | 0.145.1+26.1 (any 26.1 build) |
 | Java | 25 |
 
@@ -153,7 +153,7 @@ cd lyrirfy
 The jar is written to `lyrirfy/build/libs/lyrirfy-1.0.0.jar`.
 Requires **Java 25** and **Gradle 9.4.0** (the wrapper pins the right version).
 
-Toolchain: Loom 1.15.5, Minecraft 26.1 with Mojang mappings, Fabric Loader 0.18.4,
+Toolchain: Loom 1.15.5, Minecraft 26.1 with Mojang mappings, Fabric Loader 0.20.1,
 Fabric API 0.145.1+26.1.
 
 ---
