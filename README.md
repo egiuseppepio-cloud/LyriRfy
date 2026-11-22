@@ -3,7 +3,7 @@
 Live Spotify lyrics inside Minecraft, with three independent display modes and a full
 in-game editor for every effect.
 
-Built for **Minecraft 26.2 (Fabric)**.
+Built for **Minecraft 26.1 (Fabric)**.
 
 ---
 
@@ -38,9 +38,9 @@ Results are cached in `config/lyrirfy-cache/lyrics`, so replaying a song works o
 
 | Component | Version |
 | --- | --- |
-| Minecraft | 26.2 |
-| Fabric Loader | 0.20.1 or newer |
-| Fabric API | 0.161.0+26.2 (any 26.2 build) |
+| Minecraft | 26.1 |
+| Fabric Loader | 0.18.4 or newer |
+| Fabric API | 0.145.1+26.1 (any 26.1 build) |
 | Java | 25 |
 
 The mod is client-side only. It works in singleplayer and on servers (nothing is sent to
@@ -50,8 +50,8 @@ the server).
 
 ## Installation
 
-1. Install Fabric Loader for Minecraft 26.2.
-2. Put **Fabric API** and **`LyriRfy-1.0.0-mc26.2.jar`** (from the `release/` folder) into
+1. Install Fabric Loader for Minecraft 26.1.
+2. Put **Fabric API** and **`LyriRfy-1.0.0-mc26.1.jar`** (from the `release/` folder) into
    your `.minecraft/mods` folder.
 3. Start the game and press **F9** to open the LyriRfy menu.
 
@@ -151,10 +151,10 @@ cd lyrirfy
 ```
 
 The jar is written to `lyrirfy/build/libs/lyrirfy-1.0.0.jar`.
-Requires **Java 25** and **Gradle 9.8.2** (the wrapper pins the right version).
+Requires **Java 25** and **Gradle 9.4.0** (the wrapper pins the right version).
 
-Toolchain: Loom 1.19.3, Minecraft 26.2 with Mojang mappings, Fabric Loader 0.20.1,
-Fabric API 0.161.0+26.2.
+Toolchain: Loom 1.15.5, Minecraft 26.1 with Mojang mappings, Fabric Loader 0.18.4,
+Fabric API 0.145.1+26.1.
 
 ---
 
@@ -167,7 +167,7 @@ Fabric API 0.161.0+26.2.
   remote display, it does not play audio itself.
 * A development-mode Spotify app is limited to the users you explicitly allow. For
   public release, request an extension in the Spotify dashboard.
-* The mod targets Minecraft **26.2** specifically. Newer game versions may need updates.
+* The mod targets Minecraft **26.1** specifically. Newer game versions may need updates.
 
 ---
 
