@@ -33,7 +33,7 @@ public final class HudOverlay implements HudElement {
 	public void extractRenderState(GuiGraphicsExtractor graphics, DeltaTracker deltaTracker) {
 		Minecraft minecraft = Minecraft.getInstance();
 		Config config = LyriRfy.config();
-		if (minecraft.player == null || minecraft.gui.hud.isHidden() || !config.enabled) {
+		if (minecraft.player == null || minecraft.options.hideGui || !config.enabled) {
 			return;
 		}
 		SpotifyService spotify = LyriRfy.spotify();

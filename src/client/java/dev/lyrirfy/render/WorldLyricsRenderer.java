@@ -50,7 +50,7 @@ public final class WorldLyricsRenderer {
 			return;
 		}
 		Minecraft minecraft = Minecraft.getInstance();
-		if (minecraft.player == null || minecraft.level == null || minecraft.gui.hud.isHidden() || minecraft.gui.screen() != null) {
+		if (minecraft.player == null || minecraft.level == null || minecraft.options.hideGui || minecraft.screen != null) {
 			return;
 		}
 		SpotifyService spotify = LyriRfy.spotify();

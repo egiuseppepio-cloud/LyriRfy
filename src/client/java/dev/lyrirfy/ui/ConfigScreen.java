@@ -374,7 +374,7 @@ public class ConfigScreen extends Screen {
 				value -> String.format("%.2f", value), value -> config.lyrics3dBobAmount = value);
 		slider(columns, "Float speed", 0.0, 3.0, config.lyrics3dBobSpeed, 0.1,
 				value -> String.format("%.1f", value), value -> config.lyrics3dBobSpeed = value);
-		action(columns, "Preview in world (closes menu)", () -> minecraft.gui.setScreen(null));
+		action(columns, "Preview in world (closes menu)", () -> minecraft.setScreen(null));
 	}
 
 	private void buildHud() {
@@ -394,7 +394,7 @@ public class ConfigScreen extends Screen {
 				value -> Math.round(value * 100 / 255) + "%", value -> config.hudBackgroundAlpha = (int) Math.round(value));
 		action(columns, "Move HUD…", () -> {
 			LyriRfy.saveConfigNow();
-			minecraft.gui.setScreen(new LayoutEditorScreen(LayoutEditorScreen.Target.HUD));
+			minecraft.setScreen(new LayoutEditorScreen(LayoutEditorScreen.Target.HUD));
 		});
 	}
 
@@ -420,7 +420,7 @@ public class ConfigScreen extends Screen {
 				value -> Math.round(value) + " ms", value -> config.lyrics2dHoldMs = (int) Math.round(value));
 		action(columns, "Move 2D lyrics…", () -> {
 			LyriRfy.saveConfigNow();
-			minecraft.gui.setScreen(new LayoutEditorScreen(LayoutEditorScreen.Target.LYRICS_2D));
+			minecraft.setScreen(new LayoutEditorScreen(LayoutEditorScreen.Target.LYRICS_2D));
 		});
 	}
 

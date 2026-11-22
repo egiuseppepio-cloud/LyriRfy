@@ -77,8 +77,8 @@ public final class LyriRfy implements ClientModInitializer {
 			while (openMenuKey.consumeClick()) {
 				open = true;
 			}
-			if (open && client.gui.screen() == null) {
-				client.gui.setScreen(new ConfigScreen());
+			if (open && client.screen == null) {
+				client.setScreen(new ConfigScreen());
 			}
 			spotify.tick();
 			shake.tick(client);

@@ -248,7 +248,7 @@ public class LayoutEditorScreen extends Screen {
 	public void onClose() {
 		LyriRfy.saveConfigNow();
 		if (minecraft != null) {
-			minecraft.gui.setScreen(new ConfigScreen());
+			minecraft.setScreen(new ConfigScreen());
 		}
 	}
 }
